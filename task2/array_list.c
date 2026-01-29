@@ -22,8 +22,6 @@ void array_list_add_to_end(array_list *list, char *newString) // function signat
 
     size_t capacity = list->capacity; // save the list's capacity
 
-   
-
     size_t newStringSize = sizeof(newString); // get the size of the newString in bytes
 
     if ( currLength == capacity) // check if the list is at capacity already. 
