@@ -3,7 +3,7 @@
 #include <stddef.h>
 #include "array_list.h"
 
-array_list array_list_new( size_t capacity) // include arguments for location and capacity 
+array_list *array_list_new( size_t capacity) // include arguments for location and capacity 
 {
     array_list *newList = malloc(sizeof *newList); // create a structure with updatable memory
 
