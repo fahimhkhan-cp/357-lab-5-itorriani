@@ -1,5 +1,6 @@
 #include "checkit.h"
 #include "array_list.h"
+#include <stdlib.h> 
 
 void test1() {
    array_list *list = array_list_new(2);

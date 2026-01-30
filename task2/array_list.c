@@ -1,5 +1,4 @@
-#ifndef ARRAY_LIST.H
-#define ARRAY_LIST.h
+#include <stdlib.h>
 #include <stddef.h>
 #include "array_list.h"
 
@@ -33,7 +32,7 @@ void array_list_add_to_end(array_list *list, char *newString) // function signat
         list->capacity = newCapacity; //update the new capacity
     }
 
-    char** endPointer = (list->arr) + (currLength); // start a pointer and increment to the end of the list
+    char **endPointer = (list->arr) + (currLength); // start a pointer and increment to the end of the list
 
     char* newStringCurr = newString; // start a pointer to newString
 
@@ -44,4 +43,3 @@ void array_list_add_to_end(array_list *list, char *newString) // function signat
     return;
 }
 
-#endif
